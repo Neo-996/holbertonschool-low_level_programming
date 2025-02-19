@@ -2,7 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - prints if the number positive, negative or zero
+ *
+ * return: always (success)
+ */
 
 int main(void)
 {
@@ -21,7 +25,7 @@ int main(void)
 	}
 	else
 	  {
-	  printf("is zero");
+	    printf("is zero\n");
 	}
 	
 	return (0);
