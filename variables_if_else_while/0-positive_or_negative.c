@@ -3,11 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - prints if the number positive, zero ot negative
+ * Main - prints if the number positive, zero ot negative
  *
- * Description: the program will print whether the number stored in the variable n is positive or negative.
- *
- * return: always (success)
+ * Return: always (success)
  */
 
 int main(void)
