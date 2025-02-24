@@ -8,10 +8,9 @@ int main()
  
     
      if (isupper(ch)) {
-    printf("%c is an Uppercase Letter", ch);
+       return (1);
   } else {
-    printf("%c is not an Uppercase Letter", ch);
+       return (0);
   }
-  
-  return 0;
+ 
 }
