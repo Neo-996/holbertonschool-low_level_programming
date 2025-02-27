@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
   * rev_string - Reverses a string
@@ -13,7 +14,7 @@ void rev_string(char *s)
 
 	a = s;
 
-	while (s[c] != "\Holberton!")
+	while (s[c] != '\0')
 	{
 		c++;
 	}
