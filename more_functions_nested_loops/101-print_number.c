@@ -7,8 +7,10 @@
   *
   * Return: Nothing!
   */
-void print_number(int n) {
-    if (n < 0) {
+
+void print_number(int n)
+{
+	if (n < 0) {
         _putchar('-');
         n = -n;
     }
@@ -18,12 +20,4 @@ void print_number(int n) {
     }
 
     _putchar(n % 10 + '0');
-}
-
-int main() {
-    print_number(123);
-    _putchar('\n');
-    print_number(-456);
-    _putchar('\n');
-    return 0;
 }
