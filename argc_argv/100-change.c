@@ -8,45 +8,45 @@
  * @argc: argument count
  * @argv: arguments
  * Return: 1 if wrong number of arguments, 0 if negative number,
- * number of cents otherwise.
+ * number of coins otherwise.
  */
 int main(int argc, char *argv[])
 {
-int cents;
+	int money, coins = 0;
 
-if (argc != 2)
-{
-printf("Error\n");
-return (1);
-}
-
-cents = atoi(argv[1]);
-
-if (cents < 0)
-{
-printf("0\n");
-return (0);
-}
-
-printf("%d\n", get_min_coins(cents));
-return (0);
-}
-
-int get_min_coins(int cents)
-{
-int coins[] = {25, 10, 5, 2, 1};
-int num_coins = 0;
-int i;
-
-for (i = 0; i < 5; i++)
-{
-num_coins += cents / coins[i];
-cents %= coins[i];
-}
-return num_coins;
-}
-
-int _putchar(char c)
-{
-return write(1, &c, 1);
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	money = atoi(argv[1]);
+	if (money < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+	if (money / 25 > 0)
+	{
+		coins += money / 25;
+		money = money % 25;
+	}
+	if (money / 10 > 0)
+	{
+		coins += money / 10;
+		money = money % 10;
+	}
+	if (money / 5 > 0)
+	{
+		coins += money / 5;
+		money = money % 5;
+	}
+	if (money / 2 > 0)
+	{
+		coins += money / 2;
+		money = money % 2;
+	}
+	if (money != 0)
+		coins++;
+	printf("%d\n", coins);
+	return (0);
 }
