@@ -70,4 +70,19 @@ printf("Error\n");
 exit(100);
 }
 return a % b;
+
+if (*s == '*' || *s == '+' || *s == '/')
+{
+printf("Error: Invalid operation '%c'\n", *s);
+return NULL;
+}
+
+while (ops[i].op != NULL)
+{
+if (*s == *(ops[i].op))
+return ops[i].f;
+i++;
+}
+
+return NULL;
 }
