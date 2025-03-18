@@ -73,7 +73,7 @@ return a % b;
 
 if (*s == '*' || *s == '+' || *s == '/')
 {
-printf("Error: Invalid operation '%c'\n", *s);
+printf("Error\n", *s);
 return NULL;
 }
 
