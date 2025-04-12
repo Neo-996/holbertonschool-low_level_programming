@@ -30,11 +30,11 @@ size_t print_list(const list_t *h)
 /**
 * _strlen - finds string length
 * @str: string
-* Return: length of string
+* Return:length of string
 */
 int _strlen(char *str)
 {
-	int i;
+int i;
 
 	for (i = 0; *(str + i);)
 		i++;
