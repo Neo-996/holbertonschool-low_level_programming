@@ -2,7 +2,6 @@
 
 /**
   * insert_dnodeint_at_index - inserts a node at a certain index
-  * of doubly linked list
   *
   * @h: double pointer to first node in list
   * @idx: index to add new node at
